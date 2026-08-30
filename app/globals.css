@@ -1,0 +1,19 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import 'shadcn/tailwind.css';
+
+@theme inline {
+  --color-background: var(--background); --color-foreground: var(--foreground); --color-card: var(--card); --color-card-foreground: var(--card-foreground); --color-muted: var(--muted); --color-muted-foreground: var(--muted-foreground); --color-primary: var(--primary); --color-primary-foreground: var(--primary-foreground); --color-border: var(--border); --color-input: var(--input); --color-ring: var(--ring); --radius-sm: calc(var(--radius) * .6); --radius-md: calc(var(--radius) * .8); --radius-lg: var(--radius); --radius-xl: calc(var(--radius) * 1.4); --font-sans: 'Geist', 'Geist Fallback'; --font-mono: 'Geist Mono', 'Geist Mono Fallback';
+}
+:root { color-scheme: dark; --background: oklch(.105 .012 275); --foreground: oklch(.95 .01 275); --card: oklch(.145 .016 275); --card-foreground: oklch(.95 .01 275); --muted: oklch(.19 .018 275); --muted-foreground: oklch(.62 .02 275); --primary: oklch(.71 .18 292); --primary-foreground: oklch(.15 .03 292); --border: oklch(1 0 0 / 11%); --input: oklch(1 0 0 / 14%); --ring: oklch(.71 .18 292); --radius: .5rem; }
+* { @apply border-border outline-ring/50; }
+html { background: var(--background); }
+body { @apply bg-background text-foreground font-sans antialiased; }
+button, a, select, input { @apply outline-none; }
+button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible { @apply ring-2 ring-primary ring-offset-2 ring-offset-background; }
+.grid-texture { background-image: linear-gradient(to right, oklch(1 0 0 / 3%) 1px, transparent 1px), linear-gradient(to bottom, oklch(1 0 0 / 3%) 1px, transparent 1px); background-size: 48px 48px; }
+.logo { display: grid; place-items: center; border: 1px solid oklch(1 0 0 / 15%); border-radius: .5rem; font-weight: 700; letter-spacing: -.05em; color: oklch(.98 0 0); }
+.logo-violet, .logo-purple { background: oklch(.34 .13 292); } .logo-blue { background: oklch(.3 .1 245); } .logo-orange { background: oklch(.4 .12 55); } .logo-slate { background: oklch(.28 .025 275); } .logo-cream { background: oklch(.75 .05 85); color: oklch(.16 .02 275); } .logo-pink { background: oklch(.38 .12 350); } .logo-yellow { background: oklch(.75 .15 90); color: oklch(.16 .02 275); } .logo-green { background: oklch(.38 .12 155); } .logo-white { background: oklch(.82 .01 275); color: oklch(.16 .02 275); }
+.no-scrollbar { scrollbar-width: none; } .no-scrollbar::-webkit-scrollbar { display: none; }
+option { background: var(--card); color: var(--foreground); }
+::selection { background: oklch(.71 .18 292 / 30%); }

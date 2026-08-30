@@ -1,0 +1,3 @@
+export type Company = { slug: string; name: string; initials: string; logoTone: string; tagline: string; description: string; country: string; founded: number; sector: string; type: string; categories: string[]; valuation: number; employees: number; models: number; tools: number; aiNative: boolean; profitable: boolean; verified: boolean; website: string; products: string[] }
+export function formatValuation(value: number) { return value >= 1000 ? `$${(value / 1000).toFixed(value % 1000 === 0 ? 0 : 1)}B` : `$${value}M` }
+export function formatNumber(value: number) { return new Intl.NumberFormat('en-US').format(value) }
