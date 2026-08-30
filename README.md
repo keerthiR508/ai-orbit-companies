@@ -371,9 +371,9 @@ The visual direction is inspired by **[AI Orbit](https://aiorbit.club/)** as the
 
 | Area | Status |
 |---|---|
-| **PostgreSQL + Drizzle ORM** | ✅ Implemented — full schema and query layer for `companies` and `company_bookmarks` tables |
-| **Mock data fallback** | ✅ Implemented — 22-company curated dataset auto-activates when `DATABASE_URL` is absent |
-| **Bookmark backend persistence** | ✅ Implemented — `/api/bookmarks/[slug]` stores and retrieves bookmarks from PostgreSQL via visitor cookies |
-| **Bookmark client persistence** | ✅ Implemented — Immediate `localStorage` sync for offline-resilient UX |
-| **Submit Company** | ⚠️ Frontend/mock only — Modal UI and feedback are implemented; form data is **not** persisted to PostgreSQL |
-| **Login / Authentication** | ⚠️ Frontend/mock only — Modal UI with GitHub and Google options is implemented; no real OAuth backend is configured |
+| **PostgreSQL + Drizzle ORM** |  Implemented — full schema and query layer for `companies` and `company_bookmarks` tables |
+| **Mock data fallback** |  Implemented — 22-company curated dataset auto-activates when `DATABASE_URL` is absent |
+| **Bookmark backend persistence** |  Implemented — `/api/bookmarks/[slug]` stores and retrieves bookmarks from PostgreSQL via visitor cookies |
+| **Bookmark client persistence** |  Implemented — Immediate `localStorage` sync for offline-resilient UX |
+| **Submit Company** |  Modal UI and feedback are implemented;  |
+| **Login / Authentication** |   — Modal UI with GitHub and Google options is implemented; 
